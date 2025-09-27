@@ -8,8 +8,6 @@ inclass_revision — Exercises or scripts done during class sessions
 
 library_system — A small project simulating a library management system
 
-(and more Python files exploring topics like data structures, algorithms, file I/O, etc.)
-
 🎯 Purpose & Goals
 
 To build familiarity with core Python concepts (loops, functions, classes, exceptions, etc.)

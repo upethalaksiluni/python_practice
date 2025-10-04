@@ -1,7 +1,7 @@
 from datetime import datetime
 
-from Day9.library_system.library_system.models import Book, Member, Loan
-from Day9.library_system.library_system.repositories import BookRepository, MemberRepository, LoanRepository
+from library_system.models import Book, Member, Loan
+from library_system.repositories import BookRepository, MemberRepository, LoanRepository
 
 
 class LibraryException(Exception):

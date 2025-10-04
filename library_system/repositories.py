@@ -57,8 +57,8 @@ class LoanRepository(ABC):
 
 class InMemoryBookRepository(BookRepository):
 
-    def _init_(self):
-        self.__books:Dict[str,Book] = {}
+    def __init__(self):
+        self.__books: Dict[str, Book] = {}
 
     def add_book(self, book: Book) -> None:
         self.__books[book.book_id] = book
@@ -72,10 +72,11 @@ class InMemoryBookRepository(BookRepository):
     def list_all_books(self) -> List[Book]:
         return list(self.__books.values())
 
+
 class InMemoryMemberRepository(MemberRepository):
 
-    def _init_(self):
-        self.__members:Dict[str,Member] = {}
+    def __init__(self):
+        self.__members: Dict[str, Member] = {}
 
     def add(self, member: Member) -> None:
         self.__members[member.member_id] = member
@@ -86,10 +87,11 @@ class InMemoryMemberRepository(MemberRepository):
     def list_all_members(self) -> List[Member]:
         return list(self.__members.values())
 
+
 class InMemoryLoanRepository(LoanRepository):
 
-    def _init_(self):
-        self.__loans:Dict[str,Loan] = {}
+    def __init__(self):
+        self.__loans: Dict[str, Loan] = {}
 
     def add_Loan(self, loan: Loan) -> None:
         self.__loans[loan.loan_id] = loan
